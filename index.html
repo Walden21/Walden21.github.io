@@ -56,7 +56,7 @@
       </div>
     </header>
     
-     <!-- Services --> 
+     <!-- Services -->
     <section id="pages">
       <div class="container">
         <div class="row">
@@ -66,82 +66,20 @@
           </div>
         </div>
         <div class="row text-center">
-          <div class="col-md-12">
-	    <ul class = "list-inline" id="folderlisting">
-		<li class = "list-inline-item" id="folderitem">
-		  <a href="aboutme.html"><span class="fa-stack fa-4x">
-		    <i class="fa fa-circle fa-stack-2x text-primary"></i>
-		    <strong class="fa-stack-1x calendar-text text-secondary" style="font-size: 35%">About Me</strong>
-		  </span>
-		    <p class="text-muted">Wanna see who I am?<br>About me in general.</p>
-		  </a>
+	    <ul class = "list-inline col-lg-12" id="repo-listing">
+		<li class = "list-inline-item col-lg-3">
+		    <a href="aboutme.html">
+		      <span class="fa-stack fa-4x">
+			<i class="fa fa-circle fa-stack-2x text-primary"></i>
+			<strong class="fa-stack-1x calendar-text text-secondary" style="font-size: 35%">About Me</strong>
+		      </span>
+		      <p class="text-muted">Wanna see what I am about?</p>
+		    </a>
 		</li>
-		
-		<li class = "list-inline-item" id="folderitem">
-		  <a href="https://walden1995.github.io/IT202"><span class="fa-stack fa-4x">
-		    <i class="fa fa-circle fa-stack-2x text-primary"></i>
-		    <strong class="fa-stack-1x calendar-text text-secondary" style="font-size: 35%">IT202</strong>
-		  </span>
-		    <p class="text-muted">Wanna see what I am<br> doing in IT202? Click here!.</p>
-		  </a>
-		</li>
-
 	    </ul>
         </div>
       </div>
     </section> 
-    
-    <!-- Sections -->
-    <section id="pages">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading">Pages</h2>
-            <h3 class="section-subheading text-muted">Select the section to where you want to go.</h3>
-          </div>
-        </div>
-        <div class="row text-center">
-	 <div class="col-md-4">
-	  <a href="https://walden1995.github.io/IT202">
-	    <span class="fa-stack fa-4x">
-	      <i class="fa fa-circle fa-stack-2x text-primary"></i>
-	      <i class="fa fa-info-circle fa-stack-1x fa-inverse"></i>
-	    </span>
-	    <h4 class="service-heading" style="color:#222222;">IT202</h4>
-	    </a>
-	  </div>
-	 <div class="row text-center">
-	 <div class="col-md-4">
-	  <a href="IT202.html">
-	    <span class="fa-stack fa-4x">
-	      <i class="fa fa-circle fa-stack-2x text-primary"></i>
-	      <i class="fa fa-info-circle fa-stack-1x fa-inverse"></i>
-	    </span>
-	    <h4 class="service-heading" style="color:#222222;">OLIT202</h4>
-	    <p class="text-muted">Wanna see what I am doing in IT202? Click here!.</p>
-	    </a>
-	  </div>
-          <div class="col-md-4">
-	  <a href="aboutme.html">
-            <span class="fa-stack fa-4x">
-              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-              <i class="fa fa-id-badge fa-stack-1x fa-inverse"></i>
-            </span>
-            <h4 class="service-heading" style="color:#222222;">About Me</h4>
-            <p class="text-muted">Do you want to know what Stephen has accomplished, and what he is working on right now? Click here!.</p>
-	    </a>
-          </div>
-          <div class="col-md-4">
-            <span class="fa-stack fa-4x">
-              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-              <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
-            </span>
-            <h4 class="service-heading">U/C</h4>
-            <p class="text-muted">Under Construction</p>
-          </div>
-        </div>
-      </div>
-    </section>
     
     <!-- Footer -->
     <footer>
@@ -191,13 +129,17 @@
     <!-- Plugin JavaScript -->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-    <!-- Contact form JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
-
     <!-- Custom scripts for this template -->
     <script src="js/agency.min.js"></script>
 
   </body>
+  
+  <script src="http://ajax.microsoft.com/ajax/jquery/jquery-1.4.2.min.js" type="text/javascript"></script>
+  <script src="js/github-query.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    $(document).ready( function() {
+        $("#my-github-projects").loadRepositories("Walden1995");
+    });
+</script>
 
 </html>
