@@ -517,14 +517,15 @@ header.masthead .intro-text .intro-heading
 	margin-top:12px
 }
 
-.timeline>li.timeline-inverted>.timeline-panel
+
+.timeline>li:nth-child(even)>.timeline-panel
 {
 	float:right;
 	padding:0 20px 0 100px;
 	text-align:left
 }
 
-.timeline>li.timeline-inverted>.timeline-panel:before
+.timeline>li:nth-child(even)>.timeline-panel:before
 {
 	right:auto;
 	left:-15px;
@@ -532,7 +533,7 @@ header.masthead .intro-text .intro-heading
 	border-left-width:0
 }
 
-.timeline>li.timeline-inverted>.timeline-panel:after
+.timeline>li:nth-child(even)>.timeline-panel:after
 {
 	right:auto;
 	left:-14px;
