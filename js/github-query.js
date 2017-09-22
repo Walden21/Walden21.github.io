@@ -2,7 +2,6 @@ jQuery.githubUser = function(username, callback) {
    jQuery.getJSON('https://api.github.com/users/'+username+'/repos?callback=?',callback)
 }
 
- 
 jQuery.fn.loadRepositories = function(username) {
     
 
@@ -53,15 +52,17 @@ jQuery.fn.loadRepositories = function(username) {
         });      
       });
       
-    function sortByName(repos) {
+      function sortByName(repos) {
         repos.sort(function(a,b) {
         return a.name - b.name;
        });
     }
+      
+
 };
 
 jQuery.githubContent = function(username, repo, callback) {
-   jQuery.getJSON('https://api.github.com/repos/'+username+'/'+repo+'?callback=?',callback)
+   jQuery.getJSON('https://api.github.com/repos/'+username+'/'+repo+'/contents?callback=?',callback)
 }
 
  
@@ -70,17 +71,15 @@ jQuery.fn.loadRepoContent = function(username, repo) {
 
     $.githubContent(username, repo, function(data) {
         var repos = data.data; // JSON Parsing
-        sortByName(repos);    
-     
 
         $(repos).each(function() {
-            if (this.name != (username.toLowerCase()+'.github.com') && this.name != "Walden1995.github.io"  && this.description != null) {
+            if (this.type == "dir" && this.name != "IT202.html") {
                 
 		var node = document.createElement("LI");
 		node.setAttribute("class","list-inline-item col-lg-3");
 		
 		var link = document.createElement("A");
-		link.setAttribute("href","https://Walden1995.github.io/"+(this.name));
+		link.setAttribute("href",(this.name));
 		
 		var span = document.createElement("SPAN");
 		span.setAttribute("class","fa-stack fa-4x");
@@ -94,19 +93,9 @@ jQuery.fn.loadRepoContent = function(username, repo) {
 		
 		strg.appendChild(document.createTextNode((this.name).substring(0,8)));
 		
-		var desc = document.createElement("P");
-		desc.setAttribute("class","text-muted");
-		desc.setAttribute("style","word-wrap:break-word;");
-		
-		desc.appendChild(document.createTextNode((this.description)));
-
-
-		
-		
 		span.appendChild(icon);
 		span.appendChild(strg);
 		link.appendChild(span);
-		link.appendChild(desc);
 		node.appendChild(link);
 
 		document.getElementById("repo-listing").appendChild(node);
@@ -114,10 +103,4 @@ jQuery.fn.loadRepoContent = function(username, repo) {
             }
         });      
       });
-      
-    function sortByName(repos) {
-        repos.sort(function(a,b) {
-        return a.name - b.name;
-       });
-    }
 };
