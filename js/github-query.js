@@ -7,28 +7,19 @@ jQuery.fn.loadRepositories = function(username) {
 
     $.githubUser(username, function(data) {
         var repos = data.data; // JSON Parsing
-        sortByName(repos);    
-     
+         
 
         $(repos).each(function() {
             if (this.name != (username.toLowerCase()+'.github.com') && this.name != "Walden1995.github.io"  && this.description != null) {
                 
 							var node = $("#sample").clone();
-							node.find("A").attr("href","https://Walden1995.github.io/"+(this.name));
+							node.find("A").attr("href","https://Walden1995.github.io/"+(this.name) + "/");
 							node.find("STRONG").text((this.name).substring(0,8));
 							node.find("P").text(this.description);
 							$("#repo-listing").append(node);
             }
         });      
-      });
-      
-      function sortByName(repos) {
-        repos.sort(function(a,b) {
-        return a.name - b.name;
-       });
-    }
-      
-
+     });
 };
 
 jQuery.githubContent = function(username, repo, callback) {
@@ -45,7 +36,7 @@ jQuery.fn.loadRepoContent = function(username, repo) {
                 
 							var node = $("#listitem").clone();
 							
-							node.find("A").attr("href",(this.name));
+							node.find("A").attr("href",(this.name) + "/");
 							node.find("STRONG").text(this.name.substring(0,8));
 
 							$("#list").append(node);
