@@ -11,12 +11,11 @@ jQuery.fn.loadRepositories = function(username) {
 
         $(repos).each(function() {
             if (this.name != (username.toLowerCase()+'.github.com') && this.name != "Walden1995.github.io"  && this.description != null) {
-                
-							var node = $("#sample").clone();
-							node.find("A").attr("href","https://Walden1995.github.io/"+(this.name) + "/");
-							node.find("STRONG").text((this.name).substring(0,8));
-							node.find("P").text(this.description);
-							$("#repo-listing").append(node);
+                var node = $("#sample").clone();
+                node.find("A").attr("href","https://Walden1995.github.io/"+(this.name) + "/");
+                node.find("STRONG").text((this.name).substring(0,8));
+                node.find("P").text(this.description);
+                $("#repo-listing").append(node);
             }
         });      
      });
