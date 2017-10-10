@@ -840,6 +840,10 @@ ul.social-buttons li a:active,ul.social-buttons li a:focus,ul.social-buttons li 
 	text-transform:uppercase
 }
 
+.hover-target:hover i {
+		color: #222 !important;
+}
+
 .btn-primary.focus,.btn-primary:focus
 {
 	color:#fff;
