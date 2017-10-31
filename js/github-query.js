@@ -25,7 +25,18 @@ function loadModal(){
            node.find('H1').text(this.name);
            node.find('P').text(this.info);
            $('#education').prepend(node);
-       }) ;
+       });
+    });
+    $.get("hobbies.JSON",function(data){
+      $.each(data.data,function(){
+        var node = $('#hobbyCard').clone();
+        node.removeClass('sample');
+        node.attr('id','added');
+        node.find('img').attr('src',this.link);
+        node.find('H1').text(this.name);
+        node.find('P').text(this.info);
+        $('#hobbies').prepend(node);
+      });  
     });
 }
     
