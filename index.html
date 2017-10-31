@@ -11,7 +11,8 @@
     <link href="css/imghover.min.css" rel="stylesheet" type="text/css">
     <link href="css/timeline.min.css" rel="stylesheet" type="text/css">
     <link href="css/modal.min.css" rel="stylesheet" type="text/css">
-    <link href="css/animate.min.css" rel="stylesheet" type="text/css">        
+    <link href="css/animate.min.css" rel="stylesheet" type="text/css">  
+    <link href="css/card.css" rel="stylesheet" type="text/css">      
     <link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
@@ -360,25 +361,42 @@
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="container">
-          <div class="row">
-            <div class="col-sm-12 col-xs-12 mx-auto">
-              <div class="modal-body">
-                <h4>Under Construction</h4>
+          <div class="modal-body">
+            <div class="row"> 
+                <div class="col-md-6 col-md-offset-3">
+                    <div class="card">
+                        <div class="card-image">
+                            <img class="img-responsive" src="img/Education/CPP.png" alt="cpp">
+                            <span class="card-title">Material Cards</span>
+                        </div>
+                        
+                        <div class="card-content">
+                            <p>Cards for display in portfolio style material design by Google.</p>
+                        </div>
+                        
+                        <div class="card-action">
+                            <a href="#" target="new_blank">Link</a>
+                            <a href="#" target="new_blank">Link</a>
+                            <a href="#" target="new_blank">Link</a>
+                            <a href="#" target="new_blank">Link</a>
+                            <a href="#" target="new_blank">Link</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-lg-12" style="padding-top:12em;">
-                    <button class="btn btn-secondary subdue hoverinverse-target" data-dismiss="modal" type="button" style="background-color: transparent; border-color:none;">
-                      <i class="fa fa-times"></i>
-                      Close Page
-                    </button>
-                  </div>
 
-              </div>
+            <div class="col-lg-12" style="padding-top:12em;">
+              <button class="btn btn-secondary subdue hoverinverse-target" data-dismiss="modal" type="button" style="background-color: transparent; border-color:none;">
+                <i class="fa fa-times"></i>
+                Close Page
+              </button>
             </div>
+
           </div>
         </div>
       </div>
     </div>
   </div>
+
 <!-- EducationModal-->
 
 <!-- Modal 3 -->
@@ -453,30 +471,30 @@
               $(modal).modal('show');
             }
         }
-    });
-    
-    $('div.modal').on('hidden.bs.modal', function() {
-        var hash = this.id;
-        history.replaceState('', document.title, window.location.pathname);
-    });
-    
-    // when close button clicked simulate back
-    $('div.modal button.close').on('click', function(){
-        window.history.back();
-    })
-    
-    // when esc pressed when modal open simulate back
-    $('div.modal').keyup(function(e) {
-        if (e.keyCode == 27){
-            window.history.back();          
-        }
-    });
-    var hash = window.location.hash;
-    if (hash != ''){
-      $(hash).modal('show');
-      location.href = location.href;
-      console.log("reached page?");
-    }
+      });
+      
+      $('div.modal').on('hidden.bs.modal', function() {
+          var hash = this.id;
+          history.replaceState('', document.title, window.location.pathname);
+      });
+      
+      // when close button clicked simulate back
+      $('div.modal button.close').on('click', function(){
+          window.history.back();
+      })
+      
+      // when esc pressed when modal open simulate back
+      $('div.modal').keyup(function(e) {
+          if (e.keyCode == 27){
+              window.history.back();          
+          }
+      });
+      var hash = window.location.hash;
+      if (hash != ''){
+        $(hash).modal('show');
+        location.href = location.href;
+        console.log("reached page?");
+      }
     </script>
 
   </body>
