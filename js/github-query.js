@@ -22,7 +22,7 @@ function loadModal(){
            node.removeClass('sample');
            node.attr('id','added');
            node.find('img').attr('src',this.link);
-           node.find('H1').text(this.name);
+           node.find('SPAN').text(this.name);
            node.find('P').text(this.info);
            $('#education').prepend(node);
        });
@@ -33,7 +33,7 @@ function loadModal(){
         node.removeClass('sample');
         node.attr('id','added');
         node.find('img').attr('src',this.link);
-        node.find('H1').text(this.name);
+        node.find('SPAN').text(this.name);
         node.find('P').text(this.info);
         $('#hobbies').prepend(node);
       });  
