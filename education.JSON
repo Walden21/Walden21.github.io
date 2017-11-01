@@ -1,11 +1,10 @@
 {
-  "data":
-  [
-    {"name":"webdev","link":"img/Education/html.JPG","info":"Javascript/CSS/HTML5, Stephen is currently learning about different ways to create and maintain different styles of websites, using that knowledge he developed this website."},
-    {"name":"java","link":"img/Education/java.JPG","info":"Stephen Started using Java in late 2014, he enjoys java mostly for it's portability and has created several applications that are being utilized for demonstrations."},
-    {"name":"f#","link":"img/Education/Fsharp.JPG","info":"Stephen Started using F# early in 2017. Although not as familiar with F#, He has a basic familiarity with syntax and symantics. He plans on studying this language more."},
-    {"name":"c#","link":"img/Education/CSharp.JPG","info":"Stephen Started using C# early in 2017. He is familiar with SQL injections and parsing utilizing C#. He also has modified multiple production and demo applications."},
-    {"name":"c++","link":"img/Education/CPP.JPG","info":"Stephen Started using C++ in early 2013, He still considers the first time he utilized C++ as the spark that created his ambition to become a computer scientist and developer."},
-    {"name":"c","link":"img/Education/c.jpg","info":"Stephen Started using C during the beginning of 2014. At this point he understands the principles behind pointers and why passing by reference is so powerful."}
+  "data": [
+    { "name": "c", "link": "img/Education/c.jpg", "info": "Stephen Started using C during the beginning of 2014. At this point he understands the principles behind pointers and why passing by reference is so powerful." },
+    { "name": "c++", "link": "img/Education/CPP.JPG", "info": "Stephen Started using C++ in early 2013, He still considers the first time he utilized C++ as the spark that created his ambition to become a computer scientist and developer." },
+    { "name": "c#", "link": "img/Education/CSharp.JPG", "info": "Stephen Started using C# early in 2017. He is familiar with SQL injections and parsing utilizing C#. He also has modified multiple production and demo applications." },
+    { "name": "f#", "link": "img/Education/Fsharp.JPG", "info": "Stephen Started using F# early in 2017. Although not as familiar with F#, He has a basic familiarity with syntax and symantics. He plans on studying this language more." },
+    { "name": "java", "link": "img/Education/java.JPG", "info": "Stephen Started using Java in late 2014, he enjoys java mostly for it's portability and has created several applications that are being utilized for demonstrations." },
+    { "name": "webdev", "link": "img/Education/html.JPG", "info": "Javascript/CSS/HTML5, Stephen is currently learning about different ways to create and maintain different styles of websites, using that knowledge he developed this website." }
   ]
 }

@@ -1,6 +1,8 @@
 {
   "data":
   [
-    {"name":"Gaming","link":"img/portfolio/factorio.jpg","info":"Gaming was probably one of Stephen’s biggest hobbies when he was younger. Although today he doesn’t really play as many video games as he used to, he still plays video games that require less of his attention. MineCraft with the Computer Craft mod is a good example, as he is able to program the computers to mine resources and wood. Another good example would be factorio."}
+    {"name":"Gaming","link":"img/portfolio/factorio.jpg","info":"Gaming was probably one of Stephen’s biggest hobbies when he was younger. Although today he doesn’t really play as many video games as he used to, he still plays video games that require less of his attention. MineCraft with the Computer Craft mod is a good example, as he is able to program the computers to mine resources and wood. Another good example would be factorio."},
+    {"name":"Civil Air Patrol","link":"img/about/CAP.jpg","info":"Stephen started attending C.A.P. meetings fall 2009. He had made his way through the cadet ranks of that para-military organization and eventually transferred to the Senior member side of that organization. Currently he is a Ground Team Leader, although he has not been active on missions as of late. He enjoys the C.A.P. because it allows him to train the new generation on how to be a leader, and it also allows him to stretch his leadership skills by participating in Emergency Services."},
+    {"name":"Web Development","link":"img/Education/html.JPG","info":"Most of Stephen’s time, as of recently, has been going towards web development. He is currently working on multiple different sites and web applications trying to learn as much as he can about the internet and web development as a whole. All while studying the subject in school for his IT202 class."}
   ]
 }

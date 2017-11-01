@@ -10,7 +10,7 @@
   <!-- Bootstrap core CSS -->
   <link href="css/bootstrap4.min.css" rel="stylesheet" type="text/css">
   <link href="css/imghover.min.css" rel="stylesheet" type="text/css">
-  <link href="css/timeline.min.css" rel="stylesheet" type="text/css">
+  <link href="css/timeline.css" rel="stylesheet" type="text/css">
   <link href="css/modal.min.css" rel="stylesheet" type="text/css">
   <link href="css/animate.min.css" rel="stylesheet" type="text/css">
   <link href="css/card.min.css" rel="stylesheet" type="text/css">
@@ -170,7 +170,6 @@
 </head>
 
 <body>
-
   <!-- Navigation -->
   <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
     <a class="btn btn-secondary nav-link navbar-brand js-scroll-trigger" style="background-color: transparent; border-color: none;" href="#page-top">Walden1995</a>
@@ -237,9 +236,6 @@
                 </a>
           </li>
         </ul>
-      </div>
-      <div class="text-center">
-        <a class="btn btn-secondary nav-link navbar-brand js-scroll-trigger" style="background-color: transparent; border-color: none;" href="#About-Me">Portfolio</a>
       </div>
     </div>
   </section>
@@ -333,6 +329,7 @@
         <div class="container">
           <div class="row">
             <div class="modal-body">
+
               <!-- Project Details Go Here -->
               <div class="container">
                 <div class="row">
@@ -504,16 +501,19 @@
                         </div>
                       </li>
 
+                      <li id="timelineBubble">
+                        <a class="text-secondary" data-dismiss="modal">
+                          <div class="timeline-image-link">
+                            <h4 class="text-secondary"><br><i class="fa fa-times"> Exit</i><br></h4>
+                          </div>
+                        </a>
+                      </li>
+
                     </ul>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="col-lg-12" style="padding-top:12em;">
-              <button class="btn btn-secondary subdue hoverinverse-target" data-dismiss="modal" type="button" style="background-color: transparent; border-color:none;">
-                <i class="fa fa-times"></i>
-                Close Page
-              </button>
+
             </div>
           </div>
         </div>
@@ -525,31 +525,39 @@
   <div class="portfolio-modal modal fade" id="educationModal" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
-        <h1 style="color:orange;">Education</h1>
         <div class="container">
           <div class="modal-body">
-            <div id="education" class="row">
 
-              <div id="educationCard" class="col-md-4 col-md-offset-3 col-xs-4 col-xs-offset-3 sample">
-                <div class="card">
-                  <div class="card-image">
-                    <img class="img-responsive" src="img/Education/c.jpg" alt="cpp">
-                    <span class="card-title">sample</span>
-                  </div>
-                  <div class="card-content">
-                    <p>sample</p>
-                  </div>
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-12">
+                  <ul id="education" class="timeline">
+
+                    <li>
+                      <div class="timeline-image">
+                        <h4 class="text-secondary"><br>Education<br></h4>
+                      </div>
+                    </li>
+
+                    <li id="educationCard" class="sample">
+                      <div class="timeline-image">
+                        <img class="rounded-circle img-fluid" src="img/avatar.jpg" alt="">
+                      </div>
+                      <div class="timeline-panel">
+                        <div class="timeline-heading">
+                          <h4>1995-</h4>
+                        </div>
+                        <div class="timeline-body">
+                          <p id="text" class="">Stephen, raised in the suburbs of Chicago, is an aspiring technologist. Problem solver at heart, he took to programming as a career. Though he plans on using skills he is acquiring in college for better purposes than just programming.</p>
+                        </div>
+                      </div>
+                    </li>
+
+                  </ul>
                 </div>
               </div>
-
-              <div class="col-lg-12" style="padding-top:12em;">
-                <button class="btn btn-secondary subdue hoverinverse-target" data-dismiss="modal" type="button" style="background-color: transparent; border-color:none;">
-                    <i class="fa fa-times"></i>
-                    Close Page
-                  </button>
-              </div>
-
             </div>
+
           </div>
         </div>
       </div>
@@ -560,31 +568,39 @@
   <div class="portfolio-modal modal fade" id="hobbiesModel" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
-        <h1 style="color:orange;">Hobbies</h1>
         <div class="container">
           <div class="modal-body">
-            <div id="hobbies" class="row">
 
-              <div id="hobbyCard" class="col-md-4 col-md-offset-3 col-xs-4 col-xs-offset-3 sample">
-                <div class="card">
-                  <div class="card-image">
-                    <img class="img-responsive" src="img/Education/c.jpg" alt="cpp">
-                    <span class="card-title">sample</span>
-                  </div>
-                  <div class="card-content">
-                    <p>sample</p>
-                  </div>
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-12">
+                  <ul id="hobbies" class="timeline">
+
+                    <li>
+                      <div class="timeline-image">
+                        <h4 class="text-secondary"><br>Education<br></h4>
+                      </div>
+                    </li>
+
+                    <li id="hobbyCard" class="sample">
+                      <div class="timeline-image">
+                        <img class="rounded-circle img-fluid" src="img/avatar.jpg" alt="">
+                      </div>
+                      <div class="timeline-panel">
+                        <div class="timeline-heading">
+                          <h4>1995-</h4>
+                        </div>
+                        <div class="timeline-body">
+                          <p id="text" class="">Stephen, raised in the suburbs of Chicago, is an aspiring technologist. Problem solver at heart, he took to programming as a career. Though he plans on using skills he is acquiring in college for better purposes than just programming.</p>
+                        </div>
+                      </div>
+                    </li>
+
+                  </ul>
                 </div>
               </div>
-
-              <div class="col-lg-12" style="padding-top:12em;">
-                <button class="btn btn-secondary subdue hoverinverse-target" data-dismiss="modal" type="button" style="background-color: transparent; border-color:none;">
-                    <i class="fa fa-times"></i>
-                    Close Page
-                  </button>
-              </div>
-
             </div>
+
           </div>
         </div>
       </div>
