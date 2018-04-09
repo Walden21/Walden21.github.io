@@ -1,5 +1,6 @@
 {
   "data": [
+    { "name": "lua", "link": "./img/cplaceholder.png", "info": "Starting with Lua in early 2009, Stephen started to modify programs within the bounds of games. It was at this point that He realized his interest in computer science, and began seeking to advance his career in that field."},
     { "name": "c", "link": "./img/c.jpg", "info": "Stephen Started using C during the beginning of 2014. At this point he understands the principles behind pointers and why passing by reference is so powerful." },
     { "name": "c++", "link": "./img/CPP.JPG", "info": "Stephen Started using C++ in early 2013, He still considers the first time he utilized C++ as the spark that created his ambition to become a computer scientist and developer." },
     { "name": "c#", "link": "./img/CSharp.JPG", "info": "Stephen Started using C# early in 2017. He is familiar with SQL injections and parsing utilizing C#. He also has modified multiple production and demo applications." },
