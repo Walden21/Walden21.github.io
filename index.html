@@ -87,7 +87,7 @@
 
     section {
       padding-top: 3.5em;
-      padding-bottom: 3.5em;
+      padding-bottom: 3.8em;
     }
 
     section h2.section-heading {
@@ -192,20 +192,26 @@
 
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-          <a href="#GitRepos" class="btn btn-secondary nav-link navbar-brand js-scroll-trigger" style="background-color: transparent; border-color: none;">GitRepos</a>
+          <a class="btn btn-secondary nav-link navbar-brand" style="background-color: transparent; border-color: none;" data-toggle="modal" href="#aboutModel">History</a>
         </li>
         <li class="nav-item">
-          <a class="btn btn-secondary nav-link navbar-brand js-scroll-trigger" style="background-color: transparent; border-color: none;" href="#About-Me">Portfolio</a>
+          <a class="btn btn-secondary nav-link navbar-brand" style="background-color: transparent; border-color: none;" data-toggle="modal" href="#educationModal">Programming Career </a>
+        </li>
+        <li class="nav-item">
+          <a class="btn btn-secondary nav-link navbar-brand" style="background-color: transparent; border-color: none;" data-toggle="modal" href="#RepoModel">Github Pages</a>
+        </li>
+        <li class="nav-item">
+          <a class="btn btn-secondary nav-link navbar-brand" style="background-color: transparent; border-color: none;" data-toggle="modal" href="#hobbiesModel">Hobbies</a>
         </li>
       </ul>
       <ul class="navbar-nav navbar-right">
         <li class="nav-item dropdown navbar-right">
           <div class="dropdown">
             <button class="btn btn-secondary dropdown-toggle nav-link" type="button" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-color: transparent; border-color: none;">
-                About
+                More
               </button>
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown01">
-              <a class="dropdown-item" target="_blank" href="https://github.com/Walden1995/Walden1995.github.io">Repository</a>
+              <a class="dropdown-item" target="_blank" href="https://github.com/Walden1995/Walden1995.github.io">Website Repository</a>
             </div>
           </div>
         </li>
@@ -213,82 +219,61 @@
     </div>
   </nav>
 
-  <section id="page-top">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h2 class="section-heading" style="padding-top:25%;">Walden1995 is currently out of date and is being updated</h2>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- GitRepos -->
-  <section id="GitRepos">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 text-center">
-          <h2 class="section-heading">GitHub Repositories</h2>
-          <h3 class="section-subheading text-muted">Click on each Repo Bubble to explore.</h3>
-        </div>
-      </div>
-      <div class="row text-center">
-        <ul id="list" class="list-inline col-sm-12 col-md-12 col-xs-12">
-          <li id="listitem" class="sample list-inline-item col-md-2 col-sm-4 col-xs-4">
-            <a id="link" href="https://github.com/Walden1995/IT202">
-                  <span class="fa-stack fa-4x hover-target">
-                    <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                    <strong id="title" class="fa-stack-1x calendar-text text-secondary" style="font-size: 35%">Git Repo</strong>
-                  </span>
-                </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
   <!-- Portfolio Grid -->
   <section id="About-Me">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
-          <h2 class="section-heading">Portfolio</h2>
+          <h2 class="section-heading">Welcome to Walden1995</h2>
           <h3 class="section-subheading text-muted">Click on each section to explore.</h3>
         </div>
       </div>
 
       <div class="row" id="MODELS">
 
-        <div class="col-sm-4 col-xs-4 profile">
+        <div class="col-sm-3 col-xs-3 profile">
           <a data-toggle="modal" href="#aboutModel">
             <div class="img-box">
-              <img class="img-fluid" src="img/avatar.jpg" alt="">
+              <img class="img-fluid rounded-circle" src="img/Avatar_Square.jpg" alt="">
               <ul class="text-center">
                 <li>
-                  <h2 style="font-family:Impact, Charcoal, sans-serif;font-size:25px">About Me</h2>
+                  <h2 style="font-family:Impact, Charcoal, sans-serif;font-size:25px">History</h2>
                 </li>
               </ul>
             </div>
           </a>
         </div>
 
-        <div class="col-sm-4 col-xs-4 profile">
+        <div class="col-sm-3 col-xs-3 profile">
           <a data-toggle="modal" href="#educationModal">
             <div class="img-box">
               <img class="img-fluid" src="img/UIC.png" alt="">
               <ul class="text-center">
                 <li>
-                  <h2 style="font-family:Impact, Charcoal, sans-serif;font-size:25px">Education</h2>
+                  <h2 style="font-family:Impact, Charcoal, sans-serif;font-size:25px">Programming Career</h2>
                 </li>
               </ul>
             </div>
           </a>
         </div>
 
-        <div class="col-sm-4 col-xs-4 profile">
+        <div class="col-sm-3 col-xs-3 profile">
+            <a data-toggle="modal" href="#RepoModel">
+              <div class="img-box">
+                <img class="img-fluid" src="img/colorGithubIcon.png" alt="">
+                <ul class="text-center">
+                  <li>
+                    <h2 style="font-family:Impact, Charcoal, sans-serif;font-size:25px">GitHub Repos</h2>
+                  </li>
+                </ul>
+              </div>
+            </a>
+          </div>
+
+        <div class="col-sm-3 col-xs-3 profile">
           <a data-toggle="modal" href="#hobbiesModel">
             <div class="img-box">
-              <img class="img-fluid" src="img/hobbies.jpg" alt="">
+              <img class="img-fluid rounded-circle" src="img/hobbies.jpg" alt="">
               <ul class="text-center">
                 <li>
                   <h2 style="font-family:Impact, Charcoal, sans-serif;font-size:25px">Hobbies</h2>
@@ -311,14 +296,22 @@
         </div>
         <div class="col-md-4">
           <ul class="list-inline social-buttons">
+            
             <li class="list-inline-item">
               <a href="https://www.facebook.com/stephen.walden.100" target="_blank">
                   <i class="fa fa-facebook"></i>
                 </a>
             </li>
+            
             <li class="list-inline-item">
               <a href="https://www.linkedin.com/in/stephen-3-walden" target="_blank">
                   <i class="fa fa-linkedin"></i>
+                </a>
+            </li>
+            
+            <li class="list-inline-item">
+                <a href="https://www.youracclaim.com/users/stephen-walden/badges" target="_blank">
+                  <i class="fa fa-angle-double-up"></i>
                 </a>
             </li>
           </ul>
@@ -398,41 +391,56 @@
                         </div>
                         <div class="timeline-panel">
                           <div class="timeline-heading">
-                            <h4>Fall 2011</h4>
-                            <h4 class="subheading">Graduation One</h4>
+                            <h4>Fall '11 - Fall '13</h4>
+                            <h4 class="subheading">ECC</h4>
                           </div>
                           <div class="timeline-body">
-                            <p class="">After completing his Hichschool curiculum Stephen moved from doing school at his house to commuting to a college. He Admitted himself into the Elgin Community College to work on getting his Associates Degree. Making it a general degree so that he would have freedom moving forwards!</p>
+                            <p class="">After completing his highschool curiculum Stephen moved from doing school at his house to commuting to a college. He admitted himself into the Elgin Community College to work on getting his Associates Degree. Making it a general degree so that he would have freedom moving forwards!</p>
                           </div>
                         </div>
                       </li>
 
-                      <li>
+                                            <li>
                         <div class="timeline-image">
                           <img class="rounded-circle img-fluid" src="./img/Army.png" alt="army*" />
                         </div>
                         <div class="timeline-panel">
                           <div class="timeline-heading">
-                            <h4>January 2014 - Present</h4>
-                            <h4 class="subheading">BootCamp</h4>
+                            <h4>January 2014 - January 2020</h4>
+                            <h4 class="subheading">Army National Guard</h4>
                           </div>
                           <div class="timeline-body">
-                            <p class="">After graduating with an Associates in Science, Stephen was not quite sure what he wanted to do. So without wasting any time he visited the Army recruiters. After scoring a 90 on his ASVAB and doing his research he settled on the Illinois Army National Guard as an Information Technologies Specialist. He currently works with tactical internet setups and equipment as part of the 406th BSC.</p>
+                            <p class="">After graduating with an Associates in Science, Stephen was not quite sure what he wanted to do. So without wasting any time he visited the Army recruiters. After scoring a 90 on his ASVAB and doing his research he settled on the Illinois Army National Guard as an Information Technologies Specialist. He worked as support for tactical internet setups and equipment as part of the 406th Brigade Signal Company.</p>
                           </div>
                         </div>
                       </li>
 
                       <li>
                         <div class="timeline-image">
-                          <img class="rounded-circle img-fluid" src="./img/AITOriginal.jpg" alt="">
+                          <img class="rounded-circle img-fluid" src="./img/AITOriginal.jpg" alt="army*" />
                         </div>
                         <div class="timeline-panel">
                           <div class="timeline-heading">
-                            <h4>July 2014 - December 2014</h4>
-                            <h4 class="subheading">Military beginnings</h4>
+                            <h4>December 9, 2014</h4>
+                            <h4 class="subheading">Graduation Two</h4>
                           </div>
                           <div class="timeline-body">
-                            <p class="">Ten weeks of physically strenuous training, and Stephen was done with Basic Training (bootcamp). Next was AIT (Advanced Individualized Training). 20 weeks of IT training. Altogether Stephen was away for military duties a total of 6 months.</p>
+                            <p class="">Advanced Individualized Training, the second part of training that typically comes after boot camp, where an individual such as Stephen learns how to do his Military Occupational Specialty or job. Stephen obtained a Information Technology Specialist Deploma after attending about 20 weeks of studying.</p>
+                          </div>
+                        </div>
+                      </li>
+
+                      <li>
+                        <div class="timeline-image">
+                          <img class="rounded-circle img-fluid" src="./img/ECC.png" alt="ECC-logo" />
+                        </div>
+                        <div class="timeline-panel">
+                          <div class="timeline-heading">
+                            <h4>Spring '15</h4>
+                            <h4 class="subheading">All or Nothing</h4>
+                          </div>
+                          <div class="timeline-body">
+                            <p class="">Knowing that the calculus classes at ECC differred from other colleges and Universities, Stephen opted to complete the series and transfer all 3 calculus classes instead of having to retake them at a different instituion. A choice that would pay off in the end.</p>
                           </div>
                         </div>
                       </li>
@@ -443,7 +451,7 @@
                         </div>
                         <div class="timeline-panel">
                           <div class="timeline-heading">
-                            <h4>Fall 2015 - Spring 2019</h4>
+                            <h4>Fall '15</h4>
                             <h4 class="subheading">University</h4>
                           </div>
                           <div class="timeline-body">
@@ -459,25 +467,10 @@
                         <div class="timeline-panel">
                           <div class="timeline-heading">
                             <h4>Spring '17</h4>
-                            <h4 class="subheading">CS251 TA</h4>
+                            <h4 class="subheading">CS251-TA</h4>
                           </div>
                           <div class="timeline-body">
                             <p class="">During the Spring Semester of 2017 Stephen held a TA position for CS251 while working on his studies at UIC.</p>
-                          </div>
-                        </div>
-                      </li>
-
-                      <li>
-                        <div class="timeline-image">
-                          <img class="rounded-circle img-fluid" src="./img/UIC.png" alt="">
-                        </div>
-                        <div class="timeline-panel">
-                          <div class="timeline-heading">
-                            <h4>Fall '17</h4>
-                            <h4 class="subheading"><a class="subdue" href="https://www.cs.uic.edu/bin/view/CS211/CS211F17" target="_blank"><u>CS211</u></a></h4>
-                          </div>
-                          <div class="timeline-body">
-                            <p class="">Aftering TA'ing for 251, he decided that it would be beneficial to try and TA for a class that required students to work together on development. He did so by working as a TA for 211, allowing him to share some of his knowledge and experience to less experienced individuals.</p>
                           </div>
                         </div>
                       </li>
@@ -492,14 +485,30 @@
                             <h4 class="subheading"><a class="subdue" href="http://www.nbotix.com" target="_blank"><u>nBotix</u></a></h4>
                           </div>
                           <div class="timeline-body">
-                            <p class="">Spring Break of 2017 Stephen studied a software named <a href="http://blueprism.com" target="_blank" class="hover-target"><u>Blueprism</u></a>. This gave him the oppurtunity to get hired as a junior developer at nBotix. He quickly showed his worth and was promoted to Training Developer. His first major Business trip was to train Analysts with an nBotix partner. He traveled to Texas to conduct his first training seminar.</p>
+                            <p class="">Spring Break of 2017 Stephen studied a software named <a href="http://blueprism.com" target="_blank" class="hover-target"><u>Blueprism</u></a>. This gave him the oppurtunity to get hired as a part time Junior Developer at nBotix. He quickly showed his worth and was promoted to Training Developer. His first major Business trip was to train Analysts with an nBotix partner.
+                            </p>
                           </div>
                         </div>
                       </li>
 
                       <li>
                         <div class="timeline-image">
-                          <img class="rounded-circle img-fluid" src="./img/blue-prism-certified-developer-small.png" alt="">
+                          <img class="rounded-circle img-fluid" src="./img/UIC.png" alt="">
+                        </div>
+                        <div class="timeline-panel">
+                          <div class="timeline-heading">
+                            <h4>Fall '17, Spring '18</h4>
+                            <h4 class="subheading"><a class="subdue" href="https://www.cs.uic.edu/bin/view/CS211/CS211F17" target="_blank"><u>CS211-TA</u></a></h4>
+                          </div>
+                          <div class="timeline-body">
+                            <p class="">Aftering being a Teaching Assistant for 251, he decided that it would be beneficial to try and TA for a class that required students to work together on development. He did so by working as a TA for 211, allowing him to share some of his knowledge and experience to less experienced individuals.</p>
+                          </div>
+                        </div>
+                      </li>
+
+                      <li>
+                        <div class="timeline-image">
+                          <img class="rounded-circle img-fluid" src="./img/Developer_Badge.png" alt="">
                         </div>
                         <div class="timeline-panel">
                           <div class="timeline-heading">
@@ -507,7 +516,68 @@
                             <h4 class="subheading"><a class="subdue" href="https://www.youracclaim.com/users/stephen-walden/badges" target="_blank"><u>Blue Prism Certified Developer</u></a></h4>
                           </div>
                           <div class="timeline-body">
-                            <p class="">After working with nBotix for about a year, Stephen passed his first Blue Prism Certification Exam. He had already had experience with some projects with nBotix, and had done several proof of concepts using the Blue Prism Platform</p>
+                            <p class="">After working with nBotix for about a year, Stephen passed his first Blue Prism Certification Exam. He had already had experience with some projects with nBotix, and had done several proof of concepts using the Blue Prism Platform. This was essentially Stephen's way of providing proof that he knew a bit about the Blue Prism Software Platform.</p>
+                          </div>
+                        </div>
+                      </li>
+
+                      <li>
+                        <div class="timeline-image">
+                          <img class="rounded-circle img-fluid" src="./img/Solution_Designer_Badge.png" alt="">
+                        </div>
+                        <div class="timeline-panel">
+                          <div class="timeline-heading">
+                            <h4>June 7, 2018</h4>
+                            <h4 class="subheading"><a class="subdue" href="https://www.youracclaim.com/users/stephen-walden/badges" target="_blank"><u>Blue Prism Certified Solution Designer</u></a></h4>
+                          </div>
+                          <div class="timeline-body">
+                            <p class="">After successfully passing his Blue Prism Certified Developer Exam, Stephen immediately scheduled another exam for the following week. Completing that exam with ease as well. After that point he took up another project for nBotix and became too busy to schedule another exam.</p>
+                          </div>
+                        </div>
+                      </li>
+
+                      <li>
+                        <div class="timeline-image">
+                          <img class="rounded-circle img-fluid" src="./img/UIC.png" alt="">
+                        </div>
+                        <div class="timeline-panel">
+                          <div class="timeline-heading">
+                            <h4>Spring '19</h4>
+                            <h4 class="subheading"><a class="subdue" href="https://www.cs.uic.edu/bin/view/CS362/Spring2019" target="_blank"><u>CS362-TA</u></a></h4>
+                          </div>
+                          <div class="timeline-body">
+                            <p class="">After dealing with an nBotix project and schooling at the same time, Stephen opted out of attempting to do the same thing for his final semester at UIC. Instead he chose to TA for CS362-Computer Design. At some point throughout the semester, realizing he was the TA with the most experience of working with circuits and micro-computers, he stepped up and played a major role in the adminstration of the weekly labs.</p>
+                          </div>
+                        </div>
+                      </li>
+
+                      <li>
+                        <div class="timeline-image">
+                          <img class="rounded-circle img-fluid" src="./img/UIC.png" alt="">
+                        </div>
+                        <div class="timeline-panel">
+                          <div class="timeline-heading">
+                            <h4>May 12, 2019</h4>
+                            <h4 class="subheading">Graduation Three</h4>
+                          </div>
+                          <div class="timeline-body">
+                            <p class="">Stephen Graduated, opting not to walk or deal with the cerimonial process this time. The Bachelor's Degree took some time to arrive, and as such Stephen would not know for certain that it arrived until late June of 2019.
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+
+                      <li>
+                        <div class="timeline-image">
+                          <img class="rounded-circle img-fluid" src="./img/Professional_Developer_Badge.png" alt="">
+                        </div>
+                        <div class="timeline-panel">
+                          <div class="timeline-heading">
+                            <h4>September 28, 2019</h4>
+                            <h4 class="subheading"><a class="subdue" href="https://www.youracclaim.com/users/stephen-walden/badges" target="_blank"><u>Blue Prism Certified Professional Developer</u></a></h4>
+                          </div>
+                          <div class="timeline-body">
+                            <p class="">Although Stephen could have taken this exam 6 months after the Blue Prism Certified Developer exam, he had been busy with projects, and dealing with his final courses. He also put in some work attempting to help a failed RPA initiative before finally settling down and finding a Job. Stephen currently works as an RPA Developer or RPA Solution Designer in the Chicago Greater Area.</p>
                           </div>
                         </div>
                       </li>
@@ -623,6 +693,47 @@
       </div>
     </div>
   </div>
+
+  <div class="portfolio-modal modal fade" id="RepoModel" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="container">
+          <div class="modal-body">
+
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12 text-center">
+                  <h2 class="section-heading">GitHub Repositories</h2>
+                  <h3 class="section-subheading text-muted">Click on each Repo Bubble to explore.</h3>
+                </div>
+              </div>
+              <div class="row text-center">
+                <ul id="list" class="list-inline col-sm-12 col-md-12 col-xs-12">
+                  <li id="listitem" class="sample list-inline-item col-md-2 col-sm-4 col-xs-4">
+                    <a id="link" href="https://github.com/Walden1995/IT202">
+                          <span class="fa-stack fa-4x hover-target">
+                            <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                            <strong id="title" class="fa-stack-1x calendar-text text-secondary" style="font-size: 35%">Git Repo</strong>
+                          </span>
+                        </a>
+                  </li>
+
+                  <li id="dismiss" class="list-inline-item col-md-2 col-sm-4 col-xs-4">
+                    <span class="fa-stack fa-4x hover-target" data-dismiss="modal">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <strong id="title" class="fa-stack-1x calendar-text text-secondary" style="font-size: 35%"><i class="fa fa-times">BACK</i></strong>
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
 
   <!-- Core JavaScript -->
   <script src="js/jquery.min.js" type="text/javascript"></script>
