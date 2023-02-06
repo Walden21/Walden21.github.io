@@ -1,9 +1,9 @@
 folders = {
     "data":
     [
-      {"name":"IT202","link":"https://walden1995.github.io/IT202/"},
-      {"name":"362HC","link":"https://walden1995.github.io/CS362-Hovercraft/"},
-      {"name":"MMSS","link":"https://walden1995.github.io/MMSS/"},
+      {"name":"IT202","link":"https://Walden21.github.io/IT202/"},
+      {"name":"362HC","link":"https://Walden21.github.io/CS362-Hovercraft/"},
+      {"name":"MMSS","link":"https://Walden21.github.io/MMSS/"},
       {"name":"CS418","link":"https://ateamhasnoname03.github.io/data_science/"}
     ]
   }
