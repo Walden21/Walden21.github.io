@@ -1,0 +1,61 @@
+ .modal-body P{
+  color: whitesmoke;
+ }
+
+ .portfolio-modal .modal-dialog
+ {
+   max-width: none;
+   min-width: 100%;
+   margin:0;
+   background-color: #rgb(80, 80, 80);
+ }
+ 
+ .portfolio-modal .modal-content
+ {
+   min-height:none;
+   padding:100px 0;
+   text-align:center;
+   border:none;
+   border-radius:0;
+   background-clip:border-box;
+   -webkit-box-shadow:none;
+   box-shadow:none;
+   background-color: rgb(80, 80, 80);;
+ }
+ 
+ .portfolio-modal .modal-content p.item-intro
+ {
+   font-size:16px;
+   font-style:italic;
+   margin:20px 0 30px;
+   font-family:'Droid Serif','Helvetica Neue',Helvetica,Arial,sans-serif
+ }
+ 
+ .portfolio-modal .modal-content button
+ {
+   cursor:pointer
+ }
+ 
+ .portfolio-modal .close-modal
+ {
+   position: absolute;
+   top:25px;
+   right:25px;
+   width:75px;
+   height:75px;
+   cursor:pointer;
+   background-color: grey;
+ }
+ 
+ .portfolio-modal .close-modal:hover
+ {
+   opacity:.3
+ }
+ 
+ .portfolio-modal .modal-backdrop
+ {
+   background-color: #343a40;
+   display:none;
+   opacity:0
+ }
+ 

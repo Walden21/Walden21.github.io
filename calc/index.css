@@ -1,0 +1,126 @@
+.dropdown-menu {
+  background-color:#343a40;
+  border-style:solid;
+  border-width:2px;
+  border-color:grey;
+}
+.dropdown-item{
+  color:steelblue;
+}
+.dropdown-item:focus, .dropdown-item:hover{
+  color:white;
+  background-color:#343a40;
+}
+.hover-target:hover i 
+{
+ color: #222 !important;
+}
+.hoverinverse-target:hover{
+  color: steelblue !important;
+}
+h1,h2,h3,h4,h5,h6
+{
+  font-weight:700;
+  font-family:Montserrat,'Helvetica Neue',Helvetica,Arial,sans-serif;
+  text-transform:uppercase
+}
+section
+{
+  padding-top:3.5em;
+  height: 100%;
+}
+
+section h2.section-heading
+{
+  color:steelblue;
+  font-size:40px;
+  margin-top:0;
+  margin-bottom:15px
+}
+section h3.section-subheading
+{
+  font-size:18px;
+  font-weight:400;
+  font-style:italic;
+  margin-bottom:75px;
+  text-transform:none;
+  font-family:'Droid Serif','Helvetica Neue',Helvetica,Arial,sans-serif
+}
+.text-primary
+{
+  color: steelblue!important
+}
+.text-secondary
+{
+  color: white!important
+}
+
+.text-muted
+{
+  color: black!important
+}
+
+body
+{
+  height:100%;
+  overflow-x:hidden;
+  font-family:'Roboto Slab','Helvetica Neue',Helvetica,Arial,sans-serif;
+  background-color: rgb(80, 80, 80);
+}
+html{
+  height:100%;
+}
+p
+{
+  line-height:1.75
+}
+
+footer
+{
+  background-color: #343a40;
+  position: absolute;
+  bottom:0;
+  width: 100%;
+  text-align:center;
+}
+
+span.copyright
+{
+  font-size:90%;
+  line-height:40px;
+  font-family:Montserrat,'Helvetica Neue',Helvetica,Arial,sans-serif;
+  text-transform:uppercase;
+  color:steelblue;
+}
+
+ul.social-buttons li a:active,ul.social-buttons li a:focus,ul.social-buttons li a:hover
+{
+  background-color:#222!important
+}
+ul.social-buttons
+{
+  margin-bottom:0
+}
+ul.social-buttons li a
+{
+  font-size:20px;
+  line-height:40px;
+  display:block;
+  width:40px;
+  height:40px;
+  -webkit-transition:all .3s;
+  -moz-transition:all .3s;
+  transition:all .3s;
+  color:#fff;
+  border-radius:100%;
+  outline:0;
+  background-color:steelblue
+}
+.sample{
+  display:none;
+}
+.nav-link:hover
+{
+  color:steelblue!important;
+  border-color:#e9ecef #e9ecef #ddd
+}
